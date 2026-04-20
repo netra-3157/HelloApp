@@ -4,6 +4,8 @@ public class Hello {
 	int num=100;
 	System.out.println(num);
 	System.out.println("Hello All...");
+
+	
 	}
 }
 
