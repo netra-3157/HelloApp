@@ -1,17 +1,18 @@
 public class Hello{
- public static void main(String[] args) {
+   public static void main(String[] args) {
 
         String name = "World";
 
         if (args.length > 0) {
             StringBuilder nameBuilder = new StringBuilder();
+            boolean first = true;
 
-            for (int i = 0; i < args.length; i++) {
-                nameBuilder.append(args[i]);
-
-                if (i < args.length - 1) {
+            for (String n : args) {
+                if (!first) {
                     nameBuilder.append(", ");
                 }
+                nameBuilder.append(n);
+                first = false;
             }
 
             name = nameBuilder.toString();
@@ -21,6 +22,7 @@ public class Hello{
         
     }
 }
+
 
 
 
